@@ -50,6 +50,12 @@ app.get('/weather', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: "Current Projects"
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to respond'
